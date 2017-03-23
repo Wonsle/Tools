@@ -1,7 +1,7 @@
 ﻿
 namespace System
 {
-    public static class DataTime
+    public static class DataTimeExtension
     {
         public const string datetimeformat = "yyyy-MM-dd hh:mm:ss";
         public const string datetimeformatEx = datetimeformat + ".fff";
