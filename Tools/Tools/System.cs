@@ -3,8 +3,9 @@ namespace System
 {
     public static class DataTimeExtension
     {
-        public const string datetimeformat = "yyyy-MM-dd hh:mm:ss";
-        public const string datetimeformatEx = datetimeformat + ".fff";
-        public static string ToString(this DateTime d, string format = datetimeformat) => d.ToString(format);
+        public static string ToDateTimeFormat(this DateTime d) => d.ToString("yyyy-MM-dd HH:mm:ss.fff");
+        public static string ToDateFormat(this DateTime d) => d.ToString("yyyy-MM-dd");
+        public static string ToTimeFormat(this DateTime d) => d.ToString("HH:mm:ss.fff");
+
     }
 }
